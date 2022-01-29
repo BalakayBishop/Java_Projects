@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="incrementordecrement.IncrementOrDecrementController">
+   <left>
+      <Button fx:id="decrementButton" mnemonicParsing="false" onAction="#decrementButtonPressed" text="Decrement" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </BorderPane.margin>
+      </Button>
+   </left>
+   <right>
+      <Button fx:id="incrementButton" mnemonicParsing="false" onAction="#incrementButtonPressed" text="Increment" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+   <center>
+      <TextField fx:id="textBox" promptText="Enter an integer" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
