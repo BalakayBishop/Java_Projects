@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="541.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pkgfinal.p4.FXMLDocumentController">
+   <children>
+      <Button fx:id="calcButton" layoutX="207.0" layoutY="203.0" mnemonicParsing="false" onAction="#CalcButtonPressed" text="Calculate" />
+      <TextField fx:id="scoreBox" layoutX="244.0" layoutY="34.0" prefHeight="51.0" prefWidth="245.0" />
+      <Label fx:id="scoreLabel" layoutX="96.0" layoutY="42.0" text="Score:" />
+      <Label fx:id="letterGradeLabel" layoutX="26.0" layoutY="126.0" text="Your grade will be: " />
+      <TextField fx:id="letterGradeBox" editable="false" layoutX="244.0" layoutY="118.0" prefHeight="51.0" prefWidth="245.0" />
+      <Button fx:id="clearButton" layoutX="228.0" layoutY="282.0" mnemonicParsing="false" onAction="#clearButtonPressed" text="Clear" />
+   </children>
+</AnchorPane>
