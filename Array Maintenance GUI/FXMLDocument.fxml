@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc600_arraymaint.FXMLDocumentController">
+   <children>
+      <ListView fx:id="displayBox" editable="true" layoutX="386.0" layoutY="89.0" prefHeight="160.0" prefWidth="200.0" />
+      <Label fx:id="titleLabel" alignment="CENTER" layoutY="14.0" prefHeight="35.0" prefWidth="600.0" text="Array Maintenance App" />
+      <Button fx:id="addToButton" layoutX="176.0" layoutY="303.0" mnemonicParsing="false" onAction="#addToButton" prefHeight="35.0" prefWidth="110.0" text="Add" />
+      <Label fx:id="numLabel" layoutX="20.0" layoutY="89.0" prefHeight="35.0" text="Number">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputBox" layoutX="131.0" layoutY="90.0" prefHeight="35.0" prefWidth="200.0" promptText="1, 2, 3" />
+      <Button fx:id="displayButton" layoutX="42.0" layoutY="303.0" mnemonicParsing="false" onAction="#displayButtonPressed" prefHeight="35.0" prefWidth="110.0" text="Display" />
+      <Button fx:id="deleteButton" layoutX="310.0" layoutY="303.0" mnemonicParsing="false" onAction="#deleteButtonPressed" prefHeight="35.0" prefWidth="110.0" text="Delete" />
+      <Button fx:id="sortButton" layoutX="444.0" layoutY="303.0" mnemonicParsing="false" onAction="#sortButtonPressed" prefHeight="35.0" prefWidth="110.0" text="Sort" />
+      <Label fx:id="sizeLabel" layoutX="478.0" layoutY="249.0" text="Size" />
+      <Button fx:id="exitButton" layoutX="472.0" layoutY="361.0" mnemonicParsing="false" onAction="#exitButtonPressed" prefHeight="35.0" prefWidth="110.0" text="Exit" />
+      <Label layoutX="203.0" layoutY="141.0" />
+      <Button fx:id="clearButton" layoutX="338.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="35.0" prefWidth="110.0" text="Clear" />
+      <Button fx:id="searchButton" layoutX="203.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="35.0" prefWidth="110.0" text="Search" />
+      <TextField fx:id="searchBox" layoutX="131.0" layoutY="159.0" onAction="#handleSearch" prefHeight="35.0" prefWidth="200.0" />
+      <Label fx:id="searchLabel" layoutX="20.0" layoutY="159.0" prefHeight="35.0" text="Search">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="freqLabel" layoutX="131.0" layoutY="212.0" prefHeight="35.0" text="Frequency :" />
+      <Label fx:id="frequencyLabel" layoutX="200.0" layoutY="213.0" prefHeight="35.0" />
+   </children>
+</AnchorPane>
