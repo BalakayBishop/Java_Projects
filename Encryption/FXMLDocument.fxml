@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="csc600_encryption.FXMLDocumentController">
+   <children>
+      <Label fx:id="titleLable" alignment="CENTER" layoutX="-1.0" layoutY="14.0" prefHeight="35.0" prefWidth="600.0" text="String Encryption" />
+      <TextField fx:id="stringBox" layoutX="126.0" layoutY="76.0" prefHeight="35.0" prefWidth="346.0" promptText="Enter your string..." />
+      <Button fx:id="encodeButton" layoutX="151.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleEncrypt" prefHeight="35.0" prefWidth="115.0" text="Encode" />
+      <Button fx:id="decodeButton" layoutX="334.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleDecrypt" prefHeight="35.0" prefWidth="115.0" text="Decode" />
+      <Button fx:id="exitButton" layoutX="471.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" prefWidth="115.0" text="Exit" />
+      <Button fx:id="clearButton" layoutX="334.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="35.0" prefWidth="115.0" text="Clear" />
+   </children>
+</AnchorPane>
