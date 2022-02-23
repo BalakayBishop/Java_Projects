@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="715.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc600_healthassessment.FXMLDocumentController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" layoutY="14.0" prefHeight="35.0" prefWidth="600.0" text="Individual Health Assessment" />
+      <Label fx:id="bloodPressureLabel" layoutX="75.0" layoutY="135.0" prefHeight="35.0" text="Blood Pressure" />
+      <Label fx:id="bmiLabel" layoutX="75.0" layoutY="200.0" prefHeight="35.0" text="Body Mass Index" />
+      <Label fx:id="cholLabel" layoutX="75.0" layoutY="265.0" prefHeight="35.0" text="Total Cholesterol" />
+      <Label fx:id="glucoseLabel" layoutX="75.0" layoutY="330.0" prefHeight="35.0" text="Blood Sugar" />
+      <Label fx:id="trigLabel" layoutX="75.0" layoutY="395.0" prefHeight="35.0" text="Triglycerides" />
+      <TextField fx:id="bloodPressureText" layoutX="251.0" layoutY="135.0" prefHeight="35.0" prefWidth="158.0" promptText="120" />
+      <TextField fx:id="bmiText" layoutX="251.0" layoutY="200.0" prefHeight="35.0" prefWidth="158.0" promptText="22.5" />
+      <TextField fx:id="cholText" layoutX="251.0" layoutY="265.0" prefHeight="35.0" prefWidth="158.0" promptText="150" />
+      <TextField fx:id="glucoseText" layoutX="251.0" layoutY="330.0" prefHeight="35.0" prefWidth="158.0" promptText="100" />
+      <TextField fx:id="trigText" layoutX="251.0" layoutY="395.0" prefHeight="35.0" prefWidth="158.0" promptText="150" />
+      <Label fx:id="nameLabel" layoutX="75.0" layoutY="75.0" text="Patient Name" />
+      <TextField fx:id="patientNameText" layoutX="251.0" layoutY="75.0" prefHeight="35.0" prefWidth="293.0" promptText="John Doe" />
+      <Button fx:id="exitButton" layoutX="460.0" layoutY="655.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" prefWidth="100.0" text="Exit" />
+      <Button fx:id="clearButton" layoutX="320.0" layoutY="655.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="35.0" prefWidth="100.0" text="Clear" />
+      <Button fx:id="saveButton" layoutX="410.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="35.0" prefWidth="150.0" text="Save" />
+      <Button fx:id="getReportButton" layoutX="225.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleGetReport" prefHeight="35.0" prefWidth="150.0" text="Get Report" />
+      <Button fx:id="assessButton" layoutX="40.0" layoutY="590.0" mnemonicParsing="false" onAction="#handleAssess" prefHeight="35.0" prefWidth="150.0" text="Assess" />
+      <Label fx:id="LDLLabel" layoutX="75.0" layoutY="460.0" prefHeight="35.0" text="LDL" />
+      <TextField fx:id="LDLText" layoutX="251.0" layoutY="460.0" prefHeight="35.0" prefWidth="158.0" promptText="100" />
+      <TextField fx:id="HDLText" layoutX="251.0" layoutY="525.0" prefHeight="35.0" prefWidth="158.0" promptText="45" />
+      <Label fx:id="HDLLabel" layoutX="75.0" layoutY="525.0" prefHeight="35.0" text="HDL" />
+      <Label fx:id="label1" layoutX="432.0" layoutY="135.0" prefHeight="35.0" text="Status" />
+      <Label fx:id="label2" layoutX="432.0" layoutY="200.0" prefHeight="35.0" text="Status" />
+      <Label fx:id="label3" layoutX="432.0" layoutY="265.0" prefHeight="35.0" text="Status" />
+      <Label fx:id="label4" layoutX="432.0" layoutY="330.0" prefHeight="35.0" text="Status" />
+      <Label fx:id="label5" layoutX="432.0" layoutY="395.0" prefHeight="35.0" text="Status" />
+      <Label fx:id="label6" layoutX="432.0" layoutY="460.0" prefHeight="35.0" text="Status" />
+      <Label fx:id="label7" layoutX="432.0" layoutY="525.0" prefHeight="35.0" text="Status" />
+   </children>
+</AnchorPane>
