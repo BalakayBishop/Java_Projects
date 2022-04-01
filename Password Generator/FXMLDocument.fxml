@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="password.generator.FXMLDocumentController">
+   <children>
+      <Button fx:id="generateButton" layoutX="33.0" layoutY="535.0" mnemonicParsing="false" onAction="#handleGenerate" prefHeight="35.0" prefWidth="100.0" text="Generate" />
+      <Label fx:id="titleLabel" alignment="CENTER" layoutY="14.0" prefHeight="35.0" prefWidth="400.0" text="Random Password Generator" textAlignment="CENTER" />
+      <TextField fx:id="passwordText" editable="false" layoutX="51.0" layoutY="448.0" prefHeight="35.0" prefWidth="298.0" promptText="Generated Password" />
+      <Label fx:id="lengthLabel" layoutX="51.0" layoutY="68.0" prefHeight="35.0" text="Password Length:" />
+      <Label fx:id="uppercaseLabel" layoutX="51.0" layoutY="171.0" prefHeight="35.0" text="Include A-Z" />
+      <Label fx:id="lowercaseLabel" layoutX="51.0" layoutY="240.0" prefHeight="35.0" text="Include a-z" />
+      <Label fx:id="numbersLabel" layoutX="51.0" layoutY="309.0" prefHeight="35.0" text="Include 0-9" />
+      <Label fx:id="specialsLabel" layoutX="51.0" layoutY="378.0" prefHeight="35.0" text="Include !,#,$" />
+      <CheckBox fx:id="uppercaseBox" layoutX="244.0" layoutY="180.0" mnemonicParsing="false" />
+      <CheckBox fx:id="lowercaseBox" layoutX="244.0" layoutY="249.0" mnemonicParsing="false" />
+      <CheckBox fx:id="numbersBox" layoutX="244.0" layoutY="318.0" mnemonicParsing="false" />
+      <CheckBox fx:id="specialsBox" layoutX="244.0" layoutY="378.0" mnemonicParsing="false" />
+      <RadioButton fx:id="length8Button" layoutX="51.0" layoutY="114.0" mnemonicParsing="false" text="8" />
+      <RadioButton fx:id="length10Button" layoutX="141.0" layoutY="114.0" mnemonicParsing="false" text="10" />
+      <RadioButton fx:id="length12Button" layoutX="231.0" layoutY="114.0" mnemonicParsing="false" text="12" />
+      <RadioButton fx:id="length16Button" layoutX="321.0" layoutY="114.0" mnemonicParsing="false" text="16" />
+      <Button fx:id="clearButton" layoutX="150.0" layoutY="535.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="35.0" prefWidth="100.0" text="Clear" />
+      <Button fx:id="ExitButton" layoutX="265.0" layoutY="535.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" prefWidth="100.0" text="Exit" />
+   </children>
+</AnchorPane>
