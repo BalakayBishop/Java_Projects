@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package password.generator;
 
 import java.net.URL;
@@ -23,7 +19,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author balak
+ * @author Blake Bishop, 29 May 2022
  */
 public class FXMLDocumentController implements Initializable {
 
@@ -114,8 +110,6 @@ public class FXMLDocumentController implements Initializable {
             String password16 = arrList.toString().replaceAll("[", "").replaceAll("]", "").replaceAll(",", "");
             passwordText.setText(password16);
         }
-        
-        //passwordText.setText(password);
     }
 
     @FXML
