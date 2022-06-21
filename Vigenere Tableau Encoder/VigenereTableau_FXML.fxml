@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vigenere_tableau.VigenereTableau_FXMLController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="745.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vigenere_tableau.VigenereTableau_FXMLController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="-4.0" layoutY="14.0" prefHeight="35.0" prefWidth="600.0" text="Vigenere's Table">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="exitButton" contentDisplay="CENTER" layoutX="412.0" layoutY="671.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" prefWidth="112.0" text="Exit" />
+      <Button fx:id="clearButton" alignment="CENTER" layoutX="277.0" layoutY="671.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="35.0" prefWidth="112.0" text="Clear" />
+      <Button fx:id="encryptButton" layoutX="142.0" layoutY="671.0" mnemonicParsing="false" onAction="#handleEncrypt" prefHeight="35.0" prefWidth="112.0" text="Encrypt" />
+      <Label fx:id="ptLabel" layoutX="21.0" layoutY="67.0" prefHeight="35.0" text="Plain text message">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="enLabel" layoutX="21.0" layoutY="451.0" prefHeight="35.0" prefWidth="216.0" text="Encrypted message">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="keyLabel" layoutX="21.0" layoutY="292.0" prefHeight="35.0" text="Key">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextArea fx:id="ptTextBox" layoutX="254.0" layoutY="67.0" prefHeight="203.0" prefWidth="270.0" promptText="Please enter your plaintext message">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <TextArea fx:id="enTextBox" layoutX="254.0" layoutY="451.0" prefHeight="203.0" prefWidth="270.0" promptText="Encrypted message">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <TextArea fx:id="keyTextBox" layoutX="254.0" layoutY="292.0" prefHeight="134.0" prefWidth="270.0" promptText="Key">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+   </children>
 </AnchorPane>
