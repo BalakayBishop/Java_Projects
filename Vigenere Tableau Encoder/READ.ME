@@ -1,1 +1,23 @@
+This project was enspired from my Computer Security Course at National
+In the course, we were talking about different types of encryption and ciphers
+The Vigenere Table was introduced in the text 
+  A small part of me dared myself to see if I could actually make it with Java 
+  
+Project Description
+  This project was programmed using Java and SceneBuilder 2.0
+  In the project, there 2 files that are worth noting: Main.java and FXMLController
+  The Main file is my 'business' that has the static methods to be used for the project
+  The FXMLController class is linked to the SceneBuilder GUI that I created to give the project an interface
+  
+How it works
+  The way this project works is by running the program from the IDE
+  Inside the Controller class the first method "initialize" calls obj.init() to have the business class create the table in a 2D char array 
+  This will then open the GUI, on the GUI there is a text area for the plaintext message, the key, and the encrypted message
+  The user will input their message and the key they wish to use for encryption
+  When the user clicks "Encrypt" the controller will read the text areas to pass those strings to the static methods
+  The static method used is encrypt that takes two strings "obj.encrypt(String 1, String 2)
+  In this method, there is a for loop that will walk the strings of the passed message and key to reference them together
+    and then compare those to the corresponding char on the table
+  The chars from the table are then added to an ArrayList 
+  This array list is then used in the Controller class to display the result of the encryption
 
